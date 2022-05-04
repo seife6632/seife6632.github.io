@@ -1,1 +1,22 @@
-for TEST
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+    </head>
+    <body>
+        <h2> 랜디움 </h2>
+        
+        <script>
+        var input;
+        
+        var data = ['띵','찬','탁','칠','무'];
+        function suffleData() {
+        	var buf = [];
+        	var len = this.data.length;
+		var r = Math.floor(Math.random() * len);
+		alert(data[r]);
+        }
+        </script>
+        <button onclick="suffleData()">클릭</button>
+    </body>
+</html>
