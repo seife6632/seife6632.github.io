@@ -2,41 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>test</title><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'><link rel="stylesheet" href="./style.css">
+  <title>test2</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div1 v-show="show1" transition="fade" class="animated">G</div1>
-<br />
-<div2 v-show="show2" transition="fade" class="animated">A</div2>
-<br />
-<div3 v-show="show3" transition="fade" class="animated">K</div3>
-<br />
-<div4 v-show="show4" transition="fade" class="animated">G</div4>
-<br />
-<div5 v-show="show5" transition="fade" class="animated">G</div5>
-<br />
-<div6 v-show="show6" transition="fade" class="animated">A</div6>
-<br />
-<div7 v-show="show7" transition="fade" class="animated">K</div7>
-<br />
-<br />
-<br />
 
-<!-- <button @click="show = !show">Toggle</button> -->
-<button @mouseover="show1 = !show1">Hover</button>
-<button @mouseover="show2 = !show2">Hover</button>
-<button @mouseover="show3 = !show3">Hover</button>
-<button @mouseover="show4 = !show4">Hover</button>
-<button @mouseover="show5 = !show5">Hover</button>
-<button @mouseover="show6 = !show6">Hover</button>
-<button @mouseover="show7 = !show7">Hover</button>
-<br />
-<br />
-<span> 영어 소문자, 7글자 </span>
+<span> 영어 소문자, 5글자 </span>
 <input type="text" id="answer">
-
 <input type="button" onclick="func()" value="정답확인">
 
 <script type="text/javascript">
@@ -46,7 +19,7 @@ function func() {
 	if(answer == ""){
 		alert('답을 기입해 주십시오');
 	}
-	else if(answer == "rainbow"){
+	else if(answer == "water"){
 		alert('정답입니다');
 	}
 	else{
@@ -56,7 +29,9 @@ function func() {
 }
 </script>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js'></script><script  src="./script.js"></script>
+<canvas id="canvas">Canvas not supported.</canvas>
+
+  <script  src="./script.js"></script>
 
 </body>
 </html>
