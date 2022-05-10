@@ -1,22 +1,33 @@
 * {
-  margin: 0;
-  padding: 0;
-  color: #000;
-}
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
 
-canvas#canvas {
-  display: block;
-  background: #000;
-}
+html {
+	height: 3000px;
+	background-color: white;
+	background-size: 100% auto;
+	background-position: top center;
+	background-attachment: fixed;
+	}
+
+body {
+	height: 100%;
+	background-image: linear-gradient(#005BBB 50%, #FFD500 80%);
+	background-size: 100% 100%;
+	}
+
 
 ul#navigation {
-  position: absolute;
+  position: fixed;
   height: 100%;
   top: 0;
   right: 0;
+  color: #005BBB;
   text-align: center;
   margin-right: 1.6rem;
-  font-size: 0.8rem;
+  font-size: 4rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -24,4 +35,10 @@ ul#navigation {
 
 ul#navigation > li {
   display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .themed {
+    background: white;
+  }
 }
